@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(221, 233, 247);
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight:bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+
+        header {
+            background-color: #004aad;
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .page-title {
+            text-align: center;
+            padding: 60px 20px 20px;
+            background: #004aad;
+            color: white;
+        }
+
+        .page-title h1 {
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+
+        .page-title p {
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 50px 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            width: 320px;
+            height: 220px;
+
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            background-color: white;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.15);
+            opacity: 0.85;
+        }
+
+
+
+        .gallery-item:hover .gallery-caption {
+            opacity: 1;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Adventure Sports</div>
+            <div class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="sports.html">Sports</a>
+                <a href="galery.html">Gallery</a>
+
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <h1>Adventure Gallery</h1>
+    <p>Experience the thrill, feel the adventure, and explore the world beyond limits!</p>
+    </header>
+
+
+    <section class="gallery-container">
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1659221876406-31a3746f41b9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070"
+                alt="Surfing">
+
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2N1YmElMjBkaXZpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=900"
+                alt="Skydiving">
+
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1549221360-456a9c197d5b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVuamVlJTIwanVtcGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=900"
+                alt="Mountain Climbing">
+
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://plus.unsplash.com/premium_photo-1661868371660-eac62d15361f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2tpaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=900"
+                alt="Rafting">
+
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1592208128295-5aaa34f1d72b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFyYWdsaWRpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=900"
+                alt="Paragliding">
+
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1522163107776-c8be3ad2247d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHJvY2slMjBjbGltYmluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=900"
+                alt="Bungee Jumping">
+
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1535182463927-440364075d9c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=3272"
+                alt="Scuba Diving">
+
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://plus.unsplash.com/premium_photo-1670002242828-35b26f965425?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW91bnRhaW4lMjBiaWtpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=900"
+                alt="Cycling">
+
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1480480565647-1c4385c7c0bf?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2F5YWtpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=900"
+                alt="Surfing">
+
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1464909556/photo/hot-air-balloon-with-fire-heating-air-in-wicker-basket-with-himalaya-mountains-in-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=p3llV0rZ1j7Kms5xRwEmshhdf_EhAkS2eILAXKHu6Gg="
+                alt="Skydiving">
+
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1531204709756-1c7a41bf8936?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070"
+                alt="Mountain Climbing">
+
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://plus.unsplash.com/premium_photo-1661963388163-996e44294158?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aWNlJTIwY2xpbWJpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=900"
+                alt="Rafting">
+
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2200635433/photo/paragliding-over-the-clouds-sunset-view-at-bir-billing-himachal-pradesh-india-clouds-in-the.webp?a=1&b=1&s=612x612&w=0&k=20&c=ViIsS4Iam2bvtoRQgbj7sX6ldSYhy1AZUmfJjt8PrlM="
+                alt="Paragliding">
+
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1519327567471-ae47752b8089?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNjdWJhJTIwZGl2aW5nfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=900"
+                alt="Bungee Jumping">
+
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2169555429/photo/a-man-jumps-from-a-cliff-into-the-abyss.webp?a=1&b=1&s=612x612&w=0&k=20&c=tvUwW5PrTdc9TFI4ZvQWPhB7VAv9ndvnhgfPdImEKDY="
+                alt="Scuba Diving">
+
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1683044257346-8bcfbcf76c0c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070"
+                alt="Cycling">
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3VyZmluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=900"
+                alt="Surfing">
+
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1642933196504-62107dac9258?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1974"
+                alt="Skydiving">
+
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/108173810/photo/i-can-fly-silhouette-of-young-boy-cliff-diving.webp?a=1&b=1&s=612x612&w=0&k=20&c=GwHKv8JymnK8HpXlNmT1PEUEkZjXhj47Sc-iVv42Agk="
+                alt="Mountain Climbing">
+
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1053472118/photo/hiking-in-the-mountains.webp?a=1&b=1&s=612x612&w=0&k=20&c=Nun9whE4h0Qd4crHYGqNr0_tQ2_ehVLD2-U_UjqpA3U="
+                alt="Rafting">
+
+        </div>
+    </section>
+
+
+    <footer>
+        <p>© 2025 Adventure Sports | Designed by Ankan Mondal</a></p>
+    </footer>
+
+
+</body>
+
+</html>

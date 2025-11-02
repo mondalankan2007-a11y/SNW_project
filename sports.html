@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Sports</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(221, 233, 247);
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.5em;
+
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+
+        header {
+            background-color: #004aad;
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+
+        header h1 {
+
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .sports {
+            background-color: white;
+            width: 250px;
+            /* margin: 15px; */
+            border-radius: 10px;
+            border: 1px solid black;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: top;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+
+        .sports:hover {
+            transform: scale(1.05);
+        }
+
+        .sports img {
+            height: 150px;
+            width: 100%;
+        }
+
+        .sports h2 {
+            color: #023e8a;
+            margin: 10px 0 5px 0;
+        }
+
+        .sports p {
+            padding: 0 10px 15px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        details {
+            text-align: left;
+            padding: 10px;
+            margin-top: 10px;
+            background: #f3f7ff;
+            border-top: 1px solid #ccc;
+        }
+
+        summary {
+            cursor: pointer;
+            color: #0077b6;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        summary:hover {
+            color: #023e8a;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            justify-content: center;
+            gap: 103px;
+            row-gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        footer {
+            background: #0077b6;
+            color: white;
+            padding: 15px;
+            font-size: 15px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        .img {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Adventure Sports</div>
+            <div class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="sports.html">Sports</a>
+                <a href="galery.html">Gallery</a>
+
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <h1>Adventure Sports</h1>
+    <p>Experience the thrill, feel the adventure, and explore the world beyond limits!</p>
+    </header>
+
+    <div class="container">
+
+        <div class="sports">
+            <img class="img1"
+                src="https://images.unsplash.com/photo-1630879937467-4afa290b1a6b?auto=format&fit=crop&q=60&w=900"
+                alt="Skydiving">
+            <h2>Skydiving</h2>
+            <p>Feel the thrill of jumping from the sky!</p>
+            <details>
+                <summary>Learn More</summary>
+                <h3>Rules:</h3>
+                <ul>
+                    <li>Minimum age: 18 years</li>
+                    <li>Must complete a short ground training</li>
+                    <li>No alcohol 24 hours before jump</li>
+                </ul>
+                <h3>Cautions:</h3>
+                <ul>
+                    <li>Avoid if pregnant or have heart problems</li>
+                    <li>Ensure certified instructors only</li>
+                </ul>
+                <h3>Famous Places in India:</h3>
+                <p>Mysuru, Aamby Valley, Aligarh</p>
+                <h3>Famous Places Abroad:</h3>
+                <p>Dubai, Interlaken (Switzerland), Hawaii</p>
+                <h3>Equipment:</h3>
+                <p>Jumpsuit, parachute, helmet, altimeter, harness</p>
+            </details>
+        </div>
+
+        <div class="sports">
+            <img src="https://images.unsplash.com/photo-1586508577428-120d6b072945?auto=format&fit=crop&q=60&w=900"
+                alt="Scuba Diving">
+            <h2>Scuba Diving</h2>
+            <p>Explore colorful marine life deep underwater.</p>
+            <details>
+                <summary>Learn More</summary>
+                <h3>Rules:</h3>
+                <ul>
+                    <li>Training with a certified instructor is mandatory</li>
+                    <li>Always dive with a partner</li>
+                </ul>
+                <h3>Cautions:</h3>
+                <ul>
+                    <li>Do not hold breath underwater</li>
+                    <li>Ascend slowly to avoid decompression sickness</li>
+                </ul>
+                <h3>Famous Places in India:</h3>
+                <p>Andaman Islands, Lakshadweep, Goa</p>
+                <h3>Famous Places Abroad:</h3>
+                <p>Great Barrier Reef, Bali, Maldives</p>
+                <h3>Equipment:</h3>
+                <p>Wetsuit, fins, mask, scuba tank, regulator, dive computer</p>
+            </details>
+        </div>
+
+        <div class="sports">
+            <img src="https://media.istockphoto.com/id/547436912/photo/bungee-jumping.webp?a=1&b=1&s=612x612&w=0&k=20&c=U0ONjFPAwKX4s7D0ZbKwnSVzSyPSv2aahfrYCVfi6xI="
+                alt="Bungee Jumping">
+            <h2>Bungee Jumping</h2>
+            <p>Take a leap and feel the rush of adventure!</p>
+            <details>
+                <summary>Learn More</summary>
+                <h3>Rules:</h3>
+                <ul>
+                    <li>Weight limit: 35–120 kg</li>
+                    <li>Follow pre-jump instructions carefully</li>
+                </ul>
+                <h3>Cautions:</h3>
+                <ul>
+                    <li>Not suitable for heart or spinal conditions</li>
+                </ul>
+                <h3>Famous Places in India:</h3>
+                <p>Rishikesh, Lonavala, Goa</p>
+                <h3>Famous Places Abroad:</h3>
+                <p>Macau Tower, Victoria Falls, Nevis Highwire</p>
+                <h3>Equipment:</h3>
+                <p>Bungee cord, harness, ankle straps, helmet</p>
+            </details>
+        </div>
+        <div class="sports">
+            <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2tpaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=900"
+                alt="Skiing" height="180px">
+            <h2>Skiing</h2>
+            <p>Breathe in the cold, chase the silence, carve your peace in snow.</p>
+            <details>
+                <summary>Learn More</summary>
+                <h3>Rules:</h3>
+                <ul>
+                    <li>Always stay in control and be able to stop or avoid others.</li>
+                    <li>Follow all posted signs, warnings, and trail markings.</li>
+                </ul>
+                <h3>Cautions:</h3>
+                <ul>
+                    <li>Avoid skiing in poor visibility or extreme weather conditions.</li>
+                </ul>
+                <h3>Famous Places in India:</h3>
+                <p>Gulmarg (Jammu & Kashmir), Auli (Uttarakhand), Solang Valley (Himachal Pradesh)</p>
+                <h3>Famous Places Abroad:</h3>
+                <p>Alps (Switzerland), Aspen (USA), Whistler (Canada), Niseko (Japan)</p>
+                <h3>Equipment:</h3>
+                <p>Skis, ski boots, poles, helmet, goggles, gloves, ski suit</p>
+            </details>
+        </div>
+        <div class="sports">
+            <img src="https://media.istockphoto.com/id/1187819372/photo/summer-mountain-valley-paragliding-scene-paragliding-pilots-focus-on-sky-flight-in-saputara.webp?a=1&b=1&s=612x612&w=0&k=20&c=eNiz55k0w4coEwdAWIw6tnafnYViKIYOH5wolE_39kc="
+                alt="Paragliding">
+            <h2>Paragliding</h2>
+            <p>Soar high and enjoy a bird's-eye view.</p>
+            <details>
+                <summary>Learn More</summary>
+                <h3>Rules:</h3>
+                <ul>
+                    <li>Fly only under suitable weather conditions and with proper clearance from authorities.</li>
+                    <li>Always use certified equipment and follow instructions from a licensed instructor.</li>
+                </ul>
+                <h3>Cautions:</h3>
+                <ul>
+                    <li>Avoid flying during strong winds, storms, or poor visibility conditions.</li>
+                </ul>
+                <h3>Famous Places in India:</h3>
+                <p>Bir Billing (Himachal Pradesh), Kamshet (Maharashtra), Nainital (Uttarakhand), Gangtok (Sikkim)</p>
+                <h3>Famous Places Abroad:</h3>
+                <p>Interlaken (Switzerland), Queenstown (New Zealand), Ölüdeniz (Turkey), Chamonix (France)</p>
+                <h3>Equipment:</h3>
+                <p>Paraglider wing, harness, helmet, reserve parachute, variometer, radio, flying suit</p>
+            </details>
+        </div>
+        <div class="sports">
+            <img src="https://images.unsplash.com/photo-1522163182402-834f871fd851?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cm9jayUyMGNsaW1iaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=900"
+                alt="Rock Climbing">
+            <h2>Rock Climbing</h2>
+            <p>Test your strength and reach new heights.</p>
+            <details>
+                <summary>Learn More</summary>
+                <h3>Rules:</h3>
+                <ul>
+                    <li>Always double-check your harness, knots, and belay system before climbing.</li>
+                    <li>Climb with a partner and communicate clearly during every move.</li>
+                </ul>
+                <h3>Cautions:</h3>
+                <ul>
+                    <li>Avoid climbing on wet or loose rock surfaces to prevent slips and falls.</li>
+                </ul>
+                <h3>Famous Places in India:</h3>
+                <p>Badami (Karnataka), Hampi (Karnataka), Malshej Ghat (Maharashtra), Parvati Valley (Himachal Pradesh)
+                </p>
+                <h3>Famous Places Abroad:</h3>
+                <p>Yosemite National Park (USA), Kalymnos (Greece), Fontainebleau (France), Railay Beach (Thailand)</p>
+                <h3>Equipment:</h3>
+                <p>Climbing rope, harness, carabiners, belay device, climbing shoes, chalk bag, helmet</p>
+            </details>
+        </div>
+        <div class="sports">
+            <img src="https://media.istockphoto.com/id/595364412/photo/young-man-surfer-surfing-in-the-beach-of-kauai-hawaii.webp?a=1&b=1&s=612x612&w=0&k=20&c=Fv0ZuQ7N3XoKoXskLHKen9iBjS8dN2yE2nZhvMbzPKM="
+                alt="Surfing">
+            <h2>Surfing</h2>
+            <p>Ride the waves and enjoy the ocean breeze.</p>
+            <details>
+                <summary>Learn More</summary>
+
+                <h3>Rules:</h3>
+                <ul>
+                    <li>Always surf in designated areas and follow local surf etiquette.</li>
+                    <li>Give right of way to the surfer closest to the wave’s peak.</li>
+                </ul>
+
+                <h3>Cautions:</h3>
+                <ul>
+                    <li>Avoid surfing during storms or when there are strong rip currents.</li>
+                </ul>
+
+                <h3>Famous Places in India:</h3>
+                <p>Kovalam (Kerala), Gokarna (Karnataka), Pondicherry, Varkala (Kerala)</p>
+
+                <h3>Famous Places Abroad:</h3>
+                <p>Gold Coast (Australia), Waikiki (Hawaii), Bali (Indonesia), Jeffreys Bay (South Africa)</p>
+
+                <h3>Equipment:</h3>
+                <p>Surfboard, wetsuit, surf leash, wax, fins, rash guard</p>
+
+            </details>
+        </div>
+        <div class="sports">
+            <img src="https://images.unsplash.com/photo-1633707167682-9068729bc84c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2765"
+                alt="Mountain Biking">
+            <h2>Mountain Biking</h2>
+            <p>Ride the trails, feel the wind, find your wild.</p>
+            <details>
+                <summary>Learn More</summary>
+
+                <h3>Rules:</h3>
+                <ul>
+                    <li>Always wear a helmet and protective gear before riding.</li>
+                    <li>Follow marked trails and yield to hikers and uphill riders.</li>
+                </ul>
+
+                <h3>Cautions:</h3>
+                <ul>
+                    <li>Avoid biking on wet or unstable trails to prevent accidents.</li>
+                </ul>
+
+                <h3>Famous Places in India:</h3>
+                <p>Manali-Leh Highway, Munnar (Kerala), Coorg (Karnataka), Spiti Valley (Himachal Pradesh)</p>
+
+                <h3>Famous Places Abroad:</h3>
+                <p>Whistler (Canada), Moab (USA), Finale Ligure (Italy), Queenstown (New Zealand)</p>
+
+                <h3>Equipment:</h3>
+                <p>Mountain bike, helmet, gloves, knee and elbow pads, hydration pack, repair kit</p>
+
+            </details>
+        </div>
+        <div class="sports">
+            <img src="https://images.unsplash.com/photo-1628778417099-a52f4ca6c730?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8S2F5YWtpbmclMkN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=900"
+                alt="Kayaking">
+            <h2>Kayaking</h2>
+            <p>Paddle through stillness, find your flow.</p>
+            <details>
+                <summary>Learn More</summary>
+
+                <h3>Rules:</h3>
+                <ul>
+                    <li>Always wear a life jacket and check weather conditions before kayaking.</li>
+                    <li>Follow the waterway’s right-of-way rules and stay in designated zones.</li>
+                </ul>
+
+                <h3>Cautions:</h3>
+                <ul>
+                    <li>Avoid kayaking in strong currents, storms, or low-visibility conditions.</li>
+                </ul>
+
+                <h3>Famous Places in India:</h3>
+                <p>Rishikesh (Uttarakhand), Alleppey (Kerala), Zanskar River (Ladakh), Teesta River (Sikkim)</p>
+
+                <h3>Famous Places Abroad:</h3>
+                <p>Milford Sound (New Zealand), Sea of Cortez (Mexico), Lake Tahoe (USA), Dalmatian Coast (Croatia)</p>
+
+                <h3>Equipment:</h3>
+                <p>Kayak, paddle, life jacket, helmet, spray skirt, dry bag</p>
+
+            </details>
+        </div>
+        <div class="sports">
+            <img src="https://images.unsplash.com/photo-1497531551184-06b252e1bee1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG90JTIwYWlyJTIwYmFsbG9vbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=900"
+                alt="Hot Air Ballon">
+            <h2>Hot Air Ballon</h2>
+            <p>Rise with the dawn, drift where the winds dream.</p>
+            <details>
+                <summary>Learn More</summary>
+
+                <h3>Rules:</h3>
+                <ul>
+                    <li>Listen carefully to the pilot’s safety briefing before takeoff.</li>
+                    <li>Do not lean out or throw objects from the basket during flight.</li>
+                </ul>
+
+                <h3>Cautions:</h3>
+                <ul>
+                    <li>Avoid flying in bad weather or strong wind conditions.</li>
+                </ul>
+
+                <h3>Famous Places in India:</h3>
+                <p>Jaipur (Rajasthan), Lonavala (Maharashtra), Hampi (Karnataka), Pushkar (Rajasthan)</p>
+
+                <h3>Famous Places Abroad:</h3>
+                <p>Cappadocia (Turkey), Luxor (Egypt), Albuquerque (USA), Bagan (Myanmar)</p>
+
+                <h3>Equipment:</h3>
+                <p>Hot air balloon, burner, fuel cylinders, basket, flight instruments, safety gear</p>
+
+            </details>
+        </div>
+        <div class="sports">
+            <img src="https://media.istockphoto.com/id/1133517867/photo/riding-on-a-zip-line.jpg?s=612x612&w=0&k=20&c=wv4EJz9zdCR_ueZlfVPy_4t8-S7M0zaaVSjr4pYbbaM="
+                alt="Ziplining">
+            <h2>Ziplining</h2>
+            <p>Between sky and earth, let go and glide.</p>
+            <details>
+                <summary>Learn More</summary>
+
+                <h3>Rules:</h3>
+                <ul>
+                    <li>Always wear a helmet and harness securely fitted by the instructor.</li>
+                    <li>Follow all safety instructions before takeoff and during the ride.</li>
+                </ul>
+
+                <h3>Cautions:</h3>
+                <ul>
+                    <li>Do not attempt to brake or touch the cable while ziplining.</li>
+                </ul>
+
+                <h3>Famous Places in India:</h3>
+                <p>Rishikesh (Uttarakhand), Neemrana (Rajasthan), Munnar (Kerala), Kolad (Maharashtra)</p>
+
+                <h3>Famous Places Abroad:</h3>
+                <p>Monteverde (Costa Rica), Whistler (Canada), Puerto Rico, Hawaii (USA)</p>
+
+                <h3>Equipment:</h3>
+                <p>Harness, helmet, pulley, carabiners, gloves, trolley system</p>
+
+            </details>
+        </div>
+        <div class="sports">
+            <img src="https://media.istockphoto.com/id/1406717951/photo/ice-climbing.webp?a=1&b=1&s=612x612&w=0&k=20&c=sOET6P6zbQh_gnrt6YhIUY14Mwv8HQFrrH8-5eH8LVI="
+                alt="Ice Climbing">
+            <h2>Ice Climbing</h2>
+            <p>Grip the ice, feel the silence, conquer the heights.</p>
+            <details>
+                <summary>Learn More</summary>
+
+                <h3>Rules:</h3>
+                <ul>
+                    <li>Always inspect your gear and ice conditions before starting the climb.</li>
+                    <li>Use proper climbing techniques and maintain three points of contact at all times.</li>
+                </ul>
+
+                <h3>Cautions:</h3>
+                <ul>
+                    <li>Be cautious of falling ice and changing weather conditions that can make ice unstable.</li>
+                </ul>
+
+                <h3>Famous Places in India:</h3>
+                <p>Spiti Valley (Himachal Pradesh), Ladakh, Gulmarg (Jammu & Kashmir)</p>
+
+                <h3>Famous Places Abroad:</h3>
+                <p>Ouray (Colorado, USA), Banff (Canada), Chamonix (France), Rjukan (Norway)</p>
+
+                <h3>Equipment:</h3>
+                <p>Ice axes, crampons, helmet, harness, ice screws, climbing rope, insulated boots, gloves</p>
+
+            </details>
+        </div>
+        <footer>
+            <p>© 2025 Adventure Sports | Designed by Ankan 🌍</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
